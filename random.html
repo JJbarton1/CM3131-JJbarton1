@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewdog Map</title>
+    <title>Random Beer</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
@@ -14,24 +14,29 @@
     <ion-app>
         <ion-header>
             <ion-toolbar color="primary">
-                <ion-title>Brewdog Locator</ion-title>
+                <ion-title>Randomizer</ion-title>
             </ion-toolbar>
         </ion-header>
 
         <ion-content>
-            <!--make this autocomplete possibly-->
-            <ion-input placeholder="Enter Input"></ion-input>
+            <ion-card-content>
+                <ion-button size= "large" expand="full">Randomize</ion-button>
+            </ion-card-content>
 
             <ion-card>
                 <ion-card-header>
                     <ion-card-title id="title-name"></ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
-                    <ion-img id="img-display" src="Pictures/map.png"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="left"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="right"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="left"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="right"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="left"></ion-img>
+                    <ion-img id="img-display" src="Pictures/small.png" float="right"></ion-img>
                 </ion-card-content>
             </ion-card>
 
-            <ion-text><p>placeholder text for distance</p></ion-text>
         </ion-content>
         
     </ion-app>
