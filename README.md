@@ -1,13 +1,10 @@
 # CM3131-JJbarton1
 CM3131 Mobile Application Design and Development
 
-<<<<<<< HEAD
-Holding code
-
 
 =======
 space for unused code that might be used later
->>>>>>> d95839939f90ad4289bbb858fe66e840566364fa
+
 
 
             <!--
@@ -22,7 +19,9 @@ space for unused code that might be used later
                 </ion-card-content>
             </ion-card>
             -->
-<<<<<<< HEAD
+
+
+
 
 
             <!--
@@ -47,11 +46,3 @@ space for unused code that might be used later
           </ion-tabs>
           -->
 
-
-
-
-
-
-          
-=======
->>>>>>> d95839939f90ad4289bbb858fe66e840566364fa
