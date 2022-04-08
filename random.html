@@ -19,10 +19,12 @@
             </ion-toolbar>
         </ion-header>
 
+        <ion-card-content>
+            <ion-button id="rand-button" size="large" expand="full">Randomize</ion-button>
+        </ion-card-content>
+
+
         <ion-content>
-            <ion-card-content>
-                <ion-button id="rand-button" size= "large" expand="full">Randomize</ion-button>
-            </ion-card-content>
 
             <ion-grid>
                 <ion-row>
@@ -64,25 +66,27 @@
 
 
 
-              <ion-tabs>
-                <ion-tab-bar slot="bottom">
-                  <ion-tab-button tab="drinks">
-                    <ion-icon name="beer-outline"></ion-icon>
-                    <ion-label>Drinks</ion-label>
-                  </ion-tab-button>
-              
-                  <ion-tab-button tab="map">
-                    <ion-icon name="navigate-circle-outline"></ion-icon>
-                    <ion-label>Map</ion-label>
-                  </ion-tab-button>
-              
-                  <ion-tab-button tab="random">
-                    <ion-icon name="dice-outline"></ion-icon>
-                    <ion-label>Random</ion-label>
-                  </ion-tab-button>
-              
-                </ion-tab-bar>
-              </ion-tabs>
+              <ion-toolbar>
+                <ion-tabs>
+                    <ion-tab-bar slot="bottom">
+                      <ion-tab-button tab="drinks">
+                        <ion-icon name="beer-outline"></ion-icon>
+                        <ion-label>Drinks</ion-label>
+                      </ion-tab-button>
+                  
+                      <ion-tab-button tab="map">
+                        <ion-icon name="navigate-circle-outline"></ion-icon>
+                        <ion-label>Map</ion-label>
+                      </ion-tab-button>
+                  
+                      <ion-tab-button tab="random">
+                        <ion-icon name="dice-outline"></ion-icon>
+                        <ion-label>Random</ion-label>
+                      </ion-tab-button>
+                  
+                    </ion-tab-bar>
+                  </ion-tabs>
+                  </ion-toolbar>
 
         </ion-content>
 

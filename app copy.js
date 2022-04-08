@@ -1,6 +1,6 @@
 const imageDisplay = document.getElementById("img-display");
 const drinkName = document.getElementById("drink-name");
-const outputSelect = document.querySelector('#select-output');
+const randomOutput = document.querySelector('#rand-button');
 
 const searchTerm = document.querySelector('#input-drink-name');
 const outputList = document.getElementById("list-output");
@@ -13,7 +13,7 @@ let beerName = "";
 initData();
 
 
-outputSelect.addEventListener('ionChange', getDetails);
+randomOutput.addEventListener('ionChange', getDetails);
 
 
 
