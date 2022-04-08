@@ -1,11 +1,10 @@
-const imageDisplay = document.getElementById("img-display");
+const imageDisplay = document.getElementById("img-rand");
 const drinkName = document.getElementById("drink-name");
 const randomOutput = document.querySelector('#rand-button');
 
-const searchTerm = document.querySelector('#input-drink-name');
 const outputList = document.getElementById("list-output");
 
-const drinks = `https://api.punkapi.com/v2/beers/`;
+const drinks = `https://api.punkapi.com/v2/beers/random`;
 
 let beerName = "";
 
@@ -35,7 +34,7 @@ function updateDisplay(jsonObj){
     let beerObjArray = jsonObj; 
 
     for (let aBeerObj of beerObjArray){   
-      if (aBeerObj.name === outputSelect.value){
+      if (aBeerObj.name === randomOutput.value){
         beerObj = aBeerObj;
       }  
     }
@@ -45,21 +44,17 @@ function updateDisplay(jsonObj){
     let beerImageURL = beerObj.image_url; 
     imageDisplay.src=beerImageURL; 
     
-    removeAllListItems();
+
     makeDetailsList(beerObj)
 }
   
 function reportError(anError){
-    //console.log(anError);
-}
-
-function getBeerNameInput(){
-    return searchTerm.value;
+    console.log(anError);
 }
 
 
 function makeDetailsList(aBeerObj){
-    let beerPropertyList = ["name", "tagline", "abv", "description"];
+    let beerPropertyList = ["name", "tagline", "abv"];
   
     for (let beerProperty of beerPropertyList){
       const newItem = document.createElement('ion-item');
@@ -70,12 +65,6 @@ function makeDetailsList(aBeerObj){
     }
 }
 
-
-function removeAllListItems(){
-    while (outputList.lastElementChild) {
-      outputList.removeChild(outputList.lastElementChild);
-    }
-}
 
 
 function initData(){
@@ -109,5 +98,5 @@ function createSelectOption(aName){
     newItem.value = aName;
     newItem.textContent = aName.toUpperCase();
   
-    outputSelect.appendChild(newItem);  
+    randomOutput.appendChild(newItem);
 }

@@ -111,3 +111,11 @@ function createSelectOption(aName){
   
     outputSelect.appendChild(newItem);  
 }
+
+
+
+
+//function getInputFromTextBox() {
+//  var input = document.getElementById("userInput").value;
+//  alert(input);
+//}
