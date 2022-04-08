@@ -1,10 +1,15 @@
-const imageDisplay = document.getElementById("img-rand");
+const imageDisplay = document.getElementById("img-display");
 const drinkName = document.getElementById("drink-name");
 const randomOutput = document.querySelector('#rand-button');
 
 const outputList = document.getElementById("list-output");
 
-const drinks = `https://api.punkapi.com/v2/beers/random`;
+
+//const rBeers = drinks[Math.floor(Math.random() * drinks.length)];
+
+
+
+const drinks = `https://api.punkapi.com/v2/beers/1`;
 
 let beerName = "";
 
@@ -12,7 +17,8 @@ let beerName = "";
 initData();
 
 
-randomOutput.addEventListener('ionChange', getDetails);
+randomOutput.addEventListener('click', getDetails);
+
 
 
 
@@ -49,7 +55,7 @@ function updateDisplay(jsonObj){
 }
   
 function reportError(anError){
-    console.log(anError);
+    //console.log(anError);
 }
 
 
@@ -65,6 +71,11 @@ function makeDetailsList(aBeerObj){
     }
 }
 
+function removeAllListItems(){
+  while (outputList.lastElementChild) {
+    outputList.removeChild(outputList.lastElementChild);
+  }
+}
 
 
 function initData(){
@@ -80,6 +91,8 @@ function initSelect(jsonObj){
     for (let beerObject of beerObjectArray){
       beerNamesArray.push(beerObject.name);
     }
+
+    //might not need any of this v
     buildSelectOptions(beerNamesArray);
 }
 
@@ -94,6 +107,7 @@ function buildSelectOptions(anArrayOfBeerNames){
 
 
 function createSelectOption(aName){
+  //'click' makes button display random beer
     const newItem = document.createElement('ion-select-option');
     newItem.value = aName;
     newItem.textContent = aName.toUpperCase();

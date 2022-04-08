@@ -5,7 +5,7 @@ const outputSelect = document.querySelector('#select-output');
 const searchTerm = document.querySelector('#input-drink-name');
 const outputList = document.getElementById("list-output");
 
-const drinks = `https://api.punkapi.com/v2/beers/`;
+const drinks = `https://api.punkapi.com/v2/beers?page=1&per_page=80`;
 
 let beerName = "";
 
