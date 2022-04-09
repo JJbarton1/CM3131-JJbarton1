@@ -55,6 +55,13 @@ function getDetails(){
         
         outputList.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay.src= image_url;
+        
+        if (imageDisplay.src == null) {
+
+            //get image to display "no image"
+           imageDisplay.src = "Pictures/small.png"
+        }
+
         }
     ).catch(reportError);
 }
