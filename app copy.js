@@ -9,7 +9,7 @@ const outputList = document.getElementById("list-output");
 
 
 
-const drinks = `https://api.punkapi.com/v2/beers/1`;
+const drinks = `https://api.punkapi.com/v2/beers/random`;
 
 let beerName = "";
 
@@ -27,10 +27,14 @@ function getDetails(){
     fetch(drinks).then(getJson).then(updateDisplay).catch(reportError);
 }
 
+//data => {console.log(data)}
+
 
 function getJson(aResponse){
     return aResponse.json();
 }
+
+
   
 
 function updateDisplay(jsonObj){ 
