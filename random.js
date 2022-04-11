@@ -58,7 +58,6 @@ function getDetails(){
         
         if (imageDisplay.src == null) {
 
-            //get image to display "no image", do for list too
            imageDisplay.src = "Pictures/noIMG.png"
         }
 
@@ -95,7 +94,7 @@ function getDetails2(){
 
         if (imageDisplay2.src == null) {
 
-            //get image to display "no image", do for list too
+
            imageDisplay2.src = "Pictures/noIMG.png"
         }
 
@@ -132,7 +131,6 @@ function getDetails3(){
 
         if (imageDisplay3.src == null) {
 
-            //get image to display "no image", do for list too
            imageDisplay3.src = "Pictures/noIMG.png"
         }
 
@@ -169,7 +167,6 @@ function getDetails4(){
 
         if (imageDisplay4.src == null) {
 
-            //get image to display "no image", do for list too
            imageDisplay4.src = "Pictures/noIMG.png"
         }
 
@@ -206,7 +203,7 @@ function getDetails5(){
 
         if (imageDisplay5.src == null) {
 
-            //get image to display "no image", do for list too
+
            imageDisplay5.src = "Pictures/noIMG.png"
         }
 
@@ -243,7 +240,7 @@ function getDetails6(){
 
         if (imageDisplay6.src == null) {
 
-            //get image to display "no image", do for list too
+
            imageDisplay6.src = "Pictures/noIMG.png"
         }
 

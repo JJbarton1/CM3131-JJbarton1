@@ -47,7 +47,7 @@ function updateDisplay(jsonObj){
 
     if (imageDisplay.src == null) {
 
-      //get image to display "no image", do for list too
+
      imageDisplay.src = "Pictures/noIMG.png"
   }
 
