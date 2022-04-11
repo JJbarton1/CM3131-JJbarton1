@@ -44,6 +44,13 @@ function updateDisplay(jsonObj){
     drinkName.textContent = beerObj.name;
     let beerImageURL = beerObj.image_url; 
     imageDisplay.src=beerImageURL; 
+
+    if (imageDisplay.src == null) {
+
+      //get image to display "no image", do for list too
+     imageDisplay.src = "Pictures/noIMG.png"
+  }
+
     
     removeAllListItems();
     makeDetailsList(beerObj)

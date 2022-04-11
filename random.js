@@ -58,8 +58,8 @@ function getDetails(){
         
         if (imageDisplay.src == null) {
 
-            //get image to display "no image"
-           imageDisplay.src = "Pictures/small.png"
+            //get image to display "no image", do for list too
+           imageDisplay.src = "Pictures/noIMG.png"
         }
 
         }
@@ -92,6 +92,13 @@ function getDetails2(){
         
         outputList2.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay2.src= image_url;
+
+        if (imageDisplay2.src == null) {
+
+            //get image to display "no image", do for list too
+           imageDisplay2.src = "Pictures/noIMG.png"
+        }
+
         }
     ).catch(reportError);
 }
@@ -122,6 +129,13 @@ function getDetails3(){
         
         outputList3.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay3.src= image_url;
+
+        if (imageDisplay3.src == null) {
+
+            //get image to display "no image", do for list too
+           imageDisplay3.src = "Pictures/noIMG.png"
+        }
+
         }
     ).catch(reportError);
 }
@@ -152,6 +166,13 @@ function getDetails4(){
         
         outputList4.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay4.src= image_url;
+
+        if (imageDisplay4.src == null) {
+
+            //get image to display "no image", do for list too
+           imageDisplay4.src = "Pictures/noIMG.png"
+        }
+
         }
     ).catch(reportError);
 }
@@ -182,6 +203,13 @@ function getDetails5(){
         
         outputList5.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay5.src= image_url;
+
+        if (imageDisplay5.src == null) {
+
+            //get image to display "no image", do for list too
+           imageDisplay5.src = "Pictures/noIMG.png"
+        }
+
         }
     ).catch(reportError);
 }
@@ -212,6 +240,13 @@ function getDetails6(){
         
         outputList6.textContent = name + ', ' + 'abv: ' + abv;
         imageDisplay6.src= image_url;
+
+        if (imageDisplay6.src == null) {
+
+            //get image to display "no image", do for list too
+           imageDisplay6.src = "Pictures/noIMG.png"
+        }
+
         }
     ).catch(reportError);
 }
