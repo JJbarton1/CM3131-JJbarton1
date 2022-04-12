@@ -31,15 +31,22 @@
                     <ion-card-title id="drink-name"></ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
-                    <ion-img style="width: 300px; height: 300px;" id="img-display" src="Pictures/small.png"></ion-img>
+                    <ion-img style="width: 300px; height: 300px;" id="img-list-display" src="Pictures/small.png"></ion-img>
                 </ion-card-content>
             </ion-card>
+
 
             <ion-list id="list-output"></ion-list>
 
 
+
+
+
+
+          <ion-footer>
             <ion-toolbar>
-            <ion-tabs>
+              
+              <ion-tabs>
                 <ion-tab-bar slot="bottom">
 
                   <ion-tab-button href="list.html">
@@ -59,8 +66,10 @@
               
                 </ion-tab-bar>
               </ion-tabs>
-              </ion-toolbar>
-        </ion-content>
+            </ion-toolbar>
+        </ion-footer>
+            
+      </ion-content>
 
     </ion-app>
     <script src="list.js"></script>

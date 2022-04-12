@@ -1,4 +1,4 @@
-const imageDisplay = document.getElementById("img-display");
+const imageDisplay = document.getElementById("img-list-display");
 const drinkName = document.getElementById("drink-name");
 const outputSelect = document.querySelector('#select-output');
 

@@ -1,3 +1,17 @@
 ion-content {
     --background: url('Pictures/background.jpg') no-repeat 55%;
+    padding-bottom: 50px;
+}
+
+
+
+ion-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+
+}
+
+ion-list {
+    height: 400px;
 }
