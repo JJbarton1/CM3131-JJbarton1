@@ -7,6 +7,9 @@ const outputList = document.getElementById("list-output");
 
 const drinks = `https://api.punkapi.com/v2/beers?page=1&per_page=80`;
 
+
+//----------------------------------------------------------------------------------------------------------------------
+
 let beerName = "";
 
 
@@ -14,6 +17,7 @@ initData();
 
 
 outputSelect.addEventListener('ionChange', getDetails);
+
 
 
 
@@ -65,6 +69,9 @@ function getBeerNameInput(){
 }
 
 
+//----------------------------------------------------------------------------------------------------------------------
+
+
 function makeDetailsList(aBeerObj){
     let beerPropertyList = ["name", "tagline", "abv", "description"];
   
@@ -83,6 +90,8 @@ function removeAllListItems(){
       outputList.removeChild(outputList.lastElementChild);
     }
 }
+
+//----------------------------------------------------------------------------------------------------------------------
 
 
 function initData(){
@@ -120,9 +129,3 @@ function createSelectOption(aName){
 }
 
 
-
-
-//function getInputFromTextBox() {
-//  var input = document.getElementById("userInput").value;
-//  alert(input);
-//}
