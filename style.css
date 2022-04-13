@@ -1,3 +1,5 @@
+/* each page */
+
 ion-content {
     --background: url('Pictures/background.jpg') no-repeat 55%;
     padding-bottom: 50px;
@@ -10,6 +12,18 @@ ion-footer {
 
 }
 
+ion-toolbar{
+    color: white;
+    background-color: black;
+}
+
+ion-title{
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* index page */
+
 #img-main {
     width: 100%;
 }
@@ -18,6 +32,8 @@ ion-footer {
     color: rgb(39, 39, 39);
 }
 
+
+/* list page */
 
 ion-select {
     color: black !important; 
@@ -40,7 +56,14 @@ ion-label {
 }
 
 
+/* random page */
+
 ion-img {
     width: 150px; 
     height: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
 }
