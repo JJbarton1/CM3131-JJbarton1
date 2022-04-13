@@ -316,61 +316,96 @@ const getLocalStorage1 = () => {
 //-----------------------------------------------------------------------
 
 const saveToLocalStorage2 = () => {
+    localStorage.setItem('img-display2', imageDisplay2.src);
     localStorage.setItem('list-output2', outputList2.textContent);
     console.log("Saved to Local Storage");
 }
 
 const getLocalStorage2 = () => {
     const localData = localStorage.getItem('list-output2');
-    console.log("Local data is", localData);
+    const imageData = localStorage.getItem('img-display2');
+
+    console.log("Local data is", localData + imageData);
+
+    imageDisplay2.src = imageData;
+    outputList2.textContent = localData;
+    
 }
 
 //-----------------------------------------------------------------------
 
 const saveToLocalStorage3 = () => {
+    localStorage.setItem('img-display3', imageDisplay3.src);
     localStorage.setItem('list-output3', outputList3.textContent);
     console.log("Saved to Local Storage");
 }
 
 const getLocalStorage3 = () => {
     const localData = localStorage.getItem('list-output3');
-    console.log("Local data is", localData);
+    const imageData = localStorage.getItem('img-display3');
+
+    console.log("Local data is", localData + imageData);
+
+    imageDisplay3.src = imageData;
+    outputList3.textContent = localData;
+    
 }
 
 //-----------------------------------------------------------------------
 
 const saveToLocalStorage4 = () => {
+    localStorage.setItem('img-display4', imageDisplay4.src);
     localStorage.setItem('list-output4', outputList4.textContent);
     console.log("Saved to Local Storage");
 }
 
 const getLocalStorage4 = () => {
     const localData = localStorage.getItem('list-output4');
-    console.log("Local data is", localData);
+    const imageData = localStorage.getItem('img-display4');
+
+    console.log("Local data is", localData + imageData);
+
+    imageDisplay4.src = imageData;
+    outputList4.textContent = localData;
+    
 }
 
 //-----------------------------------------------------------------------
 
 const saveToLocalStorage5 = () => {
+    localStorage.setItem('img-display5', imageDisplay5.src);
     localStorage.setItem('list-output5', outputList5.textContent);
     console.log("Saved to Local Storage");
 }
 
 const getLocalStorage5 = () => {
     const localData = localStorage.getItem('list-output5');
-    console.log("Local data is", localData);
+    const imageData = localStorage.getItem('img-display5');
+
+    console.log("Local data is", localData + imageData);
+
+    imageDisplay5.src = imageData;
+    outputList5.textContent = localData;
+    
 }
 
 //-----------------------------------------------------------------------
 
 const saveToLocalStorage6 = () => {
+    localStorage.setItem('img-display6', imageDisplay6.src);
     localStorage.setItem('list-output6', outputList6.textContent);
     console.log("Saved to Local Storage");
 }
 
 const getLocalStorage6 = () => {
     const localData = localStorage.getItem('list-output6');
-    console.log("Local data is", localData);
+    const imageData = localStorage.getItem('img-display6');
+
+    console.log("Local data is", localData + imageData);
+
+    imageDisplay6.src = imageData;
+    outputList6.textContent = localData;
+    
 }
 
 //-----------------------------------------------------------------------
