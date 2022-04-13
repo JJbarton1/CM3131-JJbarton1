@@ -31,6 +31,12 @@ ion-card {
     background-color:rgb(232, 241, 255);
 }
 
+ion-button {
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
 
 /* index page */
 
